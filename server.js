@@ -4,7 +4,7 @@ var path = require('path');
 var Promise = require('bluebird');
 require("date-format-lite");
 
-var port = process.env.SERVER_POST;
+var port = process.env.SERVER_PORT;
 var app = express();
 var mysql = require('promise-mysql');
 
