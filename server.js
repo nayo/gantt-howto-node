@@ -9,10 +9,10 @@ var app = express();
 var mysql = require('promise-mysql');
 
 var db = mysql.createPool({
-	host: 'localhost',
-	user: 'root',
-	password: '',
-	database: 'gantt-howto-node'
+	host: process.env.DB_HOST,
+	user: process.env.DB_USER,
+	password: process.env.DB_PWD,
+	database: process.env.DB_NAME
 });
 
 app.use(express.static(path.join(__dirname, "public")));
