@@ -8,7 +8,6 @@ ENV DB_PWD=""
 ENV DB_NAME="gantt"
 
 RUN apk add mysql
-RUN /etc/init.d/mysql start
 RUN mysql -u root  -e "CREATE DATABASE gantt"
 RUN mysql -u root  -D gantt < ./app/schema.sql
 
