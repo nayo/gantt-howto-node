@@ -1,4 +1,4 @@
-dhtmlxGantt with Node.js 
+Docker dhtmlxGantt with Node.js 
 ========================
 
 Implementing backend for dhtmlxGantt using Node.js and Express.
