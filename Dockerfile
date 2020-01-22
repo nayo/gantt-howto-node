@@ -1,11 +1,11 @@
 FROM alpine
 
 MAINTAINER Genaro Contreras
-ENV SERVER_PORT= "80"
-ENV DB_HOST = "localhost"
-ENV DB_USER = "root"
-ENV DB_PWD = ""
-ENV DB_NAME = "gantt"
+ENV SERVER_PORT="80"
+ENV DB_HOST="localhost"
+ENV DB_USER="root"
+ENV DB_PWD=""
+ENV DB_NAME="gantt"
 
 
 RUN apk update && apk upgrade
