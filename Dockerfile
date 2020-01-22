@@ -7,6 +7,8 @@ ENV DB_USER="root"
 ENV DB_PWD=""
 ENV DB_NAME="gantt"
 
+RUN apk add mysql
+
 COPY ./app /opt/app
 
 WORKDIR /opt/app/
