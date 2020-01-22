@@ -10,6 +10,7 @@ ENV DB_NAME="gantt"
 
 RUN apk update && apk upgrade
 RUN apk add nodejs
+RUN apk add npm
 RUN npm install
 RUN node server.js
 
