@@ -7,7 +7,9 @@ ENV DB_USER="root"
 ENV DB_PWD=""
 ENV DB_NAME="gantt"
 
+COPY ./app /opt/app
 
+WORKDIR /opt/app/
 RUN apk update && apk upgrade
 RUN apk add nodejs
 RUN apk add npm
